@@ -10,4 +10,11 @@ There conectps are : -
 5. Encapsulation
 6. Abstraction
 
-<h1>Class :<h1> Class is a blue print of the object. and its doesn't have any space and it is a logical entity. 
+Class :---- Class is a blue print of the object. and its doesn't have any space and it is a logical entity. 
+Object : --- It is a instance of the class and it have state and behavior.
+Inheritance : -- When a class is extend into the another class that's called the inheritance.
+Polymorphism : --- When a task is done into different ways is called polymorphism. It's have method overloading and method overriding 
+we call method overloading as a compile time polymorphism and method overrriding is called run time polymorphism.
+Encapsulation : --- When bind the data and methods into a signle unit its called encapsulation.
+Abstraction : --- When hidding the internal detail and showing only the required functionality called absraction.
+Also we called data hidding.
