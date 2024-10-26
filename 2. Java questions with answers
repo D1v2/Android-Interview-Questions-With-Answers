@@ -1,6 +1,6 @@
-Question 1. What is the OOps and there conecpts?.
-Answer 1. OOps is (object oriented programing concept) a methodology that simplifie the software development and 
-maintaince by provinding some rules.
+**Question 1. What is the OOps and there conecpts?.
+**Answer 1. OOps is (object oriented programing concept) a methodology or a technique of that 
+we design program or software using the classes and objects.
 
 There conectps are : -
 1. Class
@@ -18,3 +18,23 @@ we call method overloading as a compile time polymorphism and method overrriding
 Encapsulation : --- When bind the data and methods into a signle unit its called encapsulation.
 Abstraction : --- When hidding the internal detail and showing only the required functionality called absraction.
 Also we called data hidding.
+
+
+
+**Question 2. What is the heap memory and stack memory?.
+**Answer 2. 
+Heap memory is a area in the memory and it is allocted at the runtime for to store the value of objects, arrays, or strings etc. 
+It store the value of the reference variables.
+
+Stack memory where the all veriables and methods are stored.
+
+Example :
+A a = new A();
+B b = new B();
+
+a.name = "Dev"
+b.name = "Pandey"
+
+[a,b] =============[(a.name="Dev"),(b.name="Pandey)]
+Stack Memeroy       Heap Memory
+
