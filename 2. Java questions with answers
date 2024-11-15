@@ -38,3 +38,27 @@ b.name = "Pandey"
 [a,b] =============[(a.name="Dev"),(b.name="Pandey)]
 Stack Memeroy       Heap Memory
 
+**Question 3. What is the abstraction?.
+**Answer 3. 
+Abstraction is that hidding the implementation details from the user and show only functionality.
+We can achieve this using abstract class or interface.
+
+Abstract Class - Abstract keyword is used before the class and one or more method can be abstract function 
+and abstract function doesn't have any body. We can create the instance of the abstract classes.
+
+Interface - Interface is a collections of the abstract methods and methods doesn't have any body and 
+they only define implementation are not present.
+
+
+**Question 4. What is the encapsulation ?.
+**Answer 4. Encapsulation is a machanism where variables and methods are binded into single unit and we also know as data hiding.
+In this all varibles are private or hidden for the other classes and they are accessable by the methods.
+
+**Question 5. What is the singleton and what is the singleton class ?.
+**Answer 5 . Singleton pattern is a design pattern and this type of pattern came under the creation pattern as this pattern provide the 
+best way to create the objects.
+
+Singleton Class : That class only one object will produce thats class called the signleton class.
+
+
+
