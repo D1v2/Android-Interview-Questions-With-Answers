@@ -61,4 +61,16 @@ best way to create the objects.
 Singleton Class : That class only one object will produce thats class called the signleton class.
 
 
+**Question 6. What is wrapper class and what is the int and Integer how int is different from the Integer ?.
+**Answer 6. We are working with the primitives data types some time we need to use the object of the primitives data type then use 
+the wrapper classes. Wrapper classes are Integer,Byte etc.
+
+When converting int value to integer its called boxing its done by the compiler and when convert Integer to int its called the 
+unboxing.
+
+** int is a primitive data type and Integer is a wrapper class when creating variable with the wrapper class that's called a object.
+
+
+
+
 
