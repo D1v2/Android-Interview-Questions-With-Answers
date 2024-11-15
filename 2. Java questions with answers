@@ -70,6 +70,11 @@ unboxing.
 
 ** int is a primitive data type and Integer is a wrapper class when creating variable with the wrapper class that's called a object.
 
+**Question 7. What is enum class and can we use the constructor of this class ?.
+**Anser 7. Enum class is special kind of class that have a group of predefine values.
+We can create a constructor of enum class for set the defualt value, and its a private if we change to the public it
+give the compile time error.
+
 
 
 
