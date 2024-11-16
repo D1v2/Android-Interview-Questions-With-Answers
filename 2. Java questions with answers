@@ -76,6 +76,15 @@ We can create a constructor of enum class for set the defualt value, and its a p
 give the compile time error.
 
 
+**Question 8. What is the Serialization ?.
+**Answer 8. Serialization is mechanism where objects can be represented as a sequence of the bytes that include's object's 
+data as well as the information of the objects type and that types data store into the object.
+
+After the serializtion object bytes are store into a file from that file deserilaztion be done. from the bytes and type object used to 
+recreate object into the memory.
+
+
+
 
 
 
