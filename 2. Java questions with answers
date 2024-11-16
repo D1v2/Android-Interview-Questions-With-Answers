@@ -84,7 +84,14 @@ After the serializtion object bytes are store into a file from that file deseril
 recreate object into the memory.
 
 
+**Question 9. What is the thread?.
+**Answer 9. Thread is a light weighted process and it is running independently. In process the multitask enabled and utilized the cpu 
+resources in a better way. Thread share the same memory space which make communication between them easier.
 
+Process - Process is a unit of work that have own memory space.
 
+**Question 10. What is the Synchronization ?.
+**Answer 10. Synchronization is a mechanism control the access shared resources by the multiple threads.It ensure that shared resource
+is accessible for a one thread at a a time. so that race condition can't occured and follow the main thread safety.
 
-
+Multiple threads are try to access and modify shared resouces at time due to this data concurrency is not follow and data will be overlape.
