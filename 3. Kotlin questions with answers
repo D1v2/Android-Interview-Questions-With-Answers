@@ -177,8 +177,16 @@ When need to implement the jetpack compose into existing application steps are:
 5. Find the id of that layout and based on that call the setContent method for the set the composable functions.
 
 
-**Question 17. What is the stateof and remeber with textfiled?.
-**Answer 17. Stateof is the state of a composable function of a perticuler varible when value will change then it will update the state of
-composable fucntion not entire view. and remember is using when entire ui function will recompose the that without the remeber variable 
-value will be reset and remember is store the last state of the variable.
+**Question 17. What is the stateof,state hoisting, remember and rememberSaveable?.
+**Answer 17. StateOf is a state object obserevable it will update the when value will changed and recomposition of the composable function.
+
+StateHoisting -> Its simple we are create variable into the postion where composition function is invoke so the can share the value with
+multiple composition function.
+remember -> Suppose recomposition happen into the entire composible function then it will remember the last state of the value and
+its store that into the composition.
+rememberSaveable -> Using this variable value will be survive into the configuration changes its accept the primitive data types 
+and its not store the value into the composition its store into the bundle object of the activity.
+
+
+
 
