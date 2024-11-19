@@ -18,3 +18,59 @@ offline and online type of conditions are written here.
 Domain Layer - This layer work the as bridge between the UI layer and Data layer its take the from the data layer and provide the data 
 for ui layer and its not save the refernce of the ui. it create obserabler for the ui when something changed with the data it is update 
 the UI.
+
+
+**Question 2. What is the singleton?.
+**Answer 2. Singleton is a pattern where only object are present in entire application every request will only that object not 
+create new object.We can create the object using companion object and also create a class singleton using object.
+
+
+**Question 3. Whats is android component and what is the android arcitecture component and android jetpack?.
+
+**Answer 3. Android components are activity, service, broadcast receiver and content provider these component are manage by the android.
+Android architecture component are the architecture pattern that are used develop the software and they make our software sepration of 
+concern and data driven application.
+MVC
+MVP
+MVVM
+
+Android jetpack is a set of libraries thats are provide povide the libraries for developer our application manageble.
+
+**Question 4. What is the lifecycle aware component ?.
+**Answer 4. Lifecylce aware component are the aware of the android component (activity/fragment).
+Activity have lifecycle so we want write there code into another class instead of activity file so that sepration of concern follow
+and minimum code can have into the activity.
+Component - 
+1. lifecycle owner - They component that have lifecycler,
+2. lifecycle observer - Observe the lifecycle of the android component (activity/fragment).
+
+When activity is creation phase that time first acitivity methods call after that observe class method call
+and when activity destruction phase first observe class methods are call after that acitivity methods call.
+
+
+**Quesion 5. What is the dependecy Injection?.
+**Answer 5. Dependecy Injection is design pattern that are used to inject the dependecy into reuqire place.
+Mean Suppose a class need a object after that it will be run first it will create object after that it will run without this it cannot run
+We have two approach first is class can create that object own or second is system will provide when class create that object class not 
+testable and single propeties not follow mean he is not doing his also create a object here we use the depdency injection so class will
+work own system fill full there object requirements.
+
+We can inject object using constructor or field inject.
+
+
+**Question 6. What is the hilt ?.
+**Answer 6. Hilt is dependecy injection library that are provided by the google for only android application developer.
+It is working on the top dragger2 depenedency inject and its provide a structure for injection.
+We are use the annotions for use the hilt dependency inject.
+@HiltAndroidApp,@AndroidEntryPoint,@Inject,@Inject constructor,@Module,@Provides,@InstallIn,@Sington,@Binds,@Named 
+@InstallIn -> Its define the level of object there we created manually.
+@Module -> Its a collection of object were all manually objects are store
+@Provides -> Its is used int the manually object object class for provide the object
+@Singleton -> Its create a single object.
+@Binds -> If any object is created with the construct injection and bind with the interface and return the object of that, That time use
+binds anonations.
+@Named -> It is used when have same type and have different implementation that time we are tagged for differnciate.
+
+
+
+
