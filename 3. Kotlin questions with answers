@@ -1,1 +1,20 @@
+Most Important Topics
 
+**Question 1. What is MVVM and How its work internally?.
+**Answer 1. Mvvm is a software architecture design pattern that are used to follow the cepration of concern where application is devide 
+into the three parts UI Layer (Activity/Fragment), Domain Layer(ViewModel) and DataLayer (Repository) or we can as Model so that we can
+create the software as a testable modulare and scalable.
+
+[Ativity/Fragment]       [ViewModel]              [Repository]
+[UILayer] ------------> [Domain Layer] --------> [Data Layer]--------> [Network/APIS]
+                                                    |--------> [Local Database]       
+
+UI Layer - This Layer is talk to the domain layer or viewmodel for about the so he want to fetch the data or want to send the data.And this
+the top layer where user intreact with over applacition.
+
+Data Layer - This layer is fetch the and provide to the domin layer and data can come from the network or localdatabase and also when 
+offline and online type of conditions are written here.
+
+Domain Layer - This layer work the as bridge between the UI layer and Data layer its take the from the data layer and provide the data 
+for ui layer and its not save the refernce of the ui. it create obserabler for the ui when something changed with the data it is update 
+the UI.
