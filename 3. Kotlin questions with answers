@@ -165,7 +165,20 @@ Transformation (Map, filter etc.) Of Data->
 Here we are not use the xml layout files we are created function with anotation with @Composable so that differencite from the normal
 function.
 
-**Question 16. What is the Composition and Recomposition ?.
+**Question 16. What is the Composition and Recomposition and How to use compose ui into existing application?.
 **Ansdroid 16. When our application start that time ui will create and intial composition heppen means ui will render after that
 when data will change then recomposition will happen mean ui will recreate.
+
+When need to implement the jetpack compose into existing application steps are:
+1. set true the compose into buildFeature 
+2. Set the compose kotlin compiler
+3. add the dependecies
+4. Use the ComposeView in the layout file
+5. Find the id of that layout and based on that call the setContent method for the set the composable functions.
+
+
+**Question 17. What is the stateof and remeber with textfiled?.
+**Answer 17. Stateof is the state of a composable function of a perticuler varible when value will change then it will update the state of
+composable fucntion not entire view. and remember is using when entire ui function will recompose the that without the remeber variable 
+value will be reset and remember is store the last state of the variable.
 
