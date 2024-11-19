@@ -72,5 +72,80 @@ binds anonations.
 @Named -> It is used when have same type and have different implementation that time we are tagged for differnciate.
 
 
+**Question 7. What is the Live data?.
+**Answer 7. Live data is data holder obserevable and lifecycler aware class. It is update the ui component when data has been changed
+and it will will updae ui only when that will be in active state.
+
+We have the setValue and postValue Methods both methods are used to store the update but setValue is used into the main thread and 
+postValue method is used into the background thread.
 
 
+**Question 8. What is the databinding?.
+**Answer 8. Data binding is library of the jetpack compose and it is used to the bind the ui component to the data source directly in the 
+layout file.it can we one direction or two direction binding.
+
+lateint var binding :ActivityMainBinding
+
+binding = DataBindingUtils.setLayoutFile(context,layout_name)
+
+Create varible into the layout file and pass the value of that variable into the activity file.
+
+
+
+**Question 9. What is the repository pattern?.
+**Answer 9. Its is a design pattern and it is a common pattern for other software in android it will the mediator between the domain
+layer and the data layout. Simple means repository take the request from the domain layer and resolve that query and it can make network 
+request or take data from the room database.
+
+**Question 10. What is the android architecture pattern?.
+**Answer 10. Architecture pattern simple that way for design the software in form of scable and manitainable.
+We have different pattern.
+
+MVC -> Mvc stand for model view controller here view is a layout file controller is an activity file and model is data layer file.
+view is tightly coupled with the controller because of unit test not easy to perform in this architecture and its a default architecture
+pattern we are used this into the small projects.
+
+MVP -> Mvp stand for the model view present here view is the layout and activity file and create a seperate class for business logics and
+fetch the data that extand the presenter class and presenter and view take talk to each other by the interfaces and data layer is same.
+
+MVVM -> Mvvm stand for the model view view model here view are the activty and layout file and view model are used for the business logic
+and model is a data layer that have repository and repository talk to the network or local database and view model have observable for the
+data ui will get the data from the observables.
+
+**Question 11. What is the Flows and Channels and what are the hot stream and cold streem?.
+**Answer 11. Suppose server is sending continues data and we want to take data in perform work on that we use flows and channels
+or we want to work the stream data that time we use the flow and channel.
+
+Flows are the cold stream and channels are the hot stream.
+Channels - Channels have the send and receiver and it will keep sending the data weather there is a receiver or not. And in this case if
+some one is join in the between it will loose the starting data.
+Flows - Flows have the emit and collect method it will sending the data when any reciever will present and i will send the data from the 
+starting to the receiver.
+
+Flow have the terminal and non-terminal operators means after the produce value we can receive that value into diferent way.
+
+---Terminal operator---
+first() -> It will collect the only firt value
+collect() -> It will collect the value one by one
+toList() -> It will collect first all value then give the list
+
+---Non Terminal Operater---
+
+map() -> It will take the value and perform some action and produce the value.
+filter() -> We can put the filter on the value
+But one more thing is after the non terminal operator will need to use the terminal operator for collect the value.
+
+*Note : Buffer -> Suppose sender will send the value fast but collect is taking time to collect the value on that time use the buffer
+and buffer will take the size of the capicity means how much the value you want to buffer.
+
+Flow sender is used the same thread that is collecter is used mean flow is preserve the coroutine context. So want to change the coroutine
+context because sender or fetch the stream data from the network that time we are use the backround thread and collect that data into 
+main thread so we are used "flowOn" method for change the coroutine context.
+
+Flow have the own catch block in the sending side no need to use the try catch use only catch block with the flow it will catch there 
+error.
+
+**Question 12. What is the Shared Flow?.
+**Answer 12. Shared flow is a hot flow if any one receiver present it will send the data and if some one receiver join that he will
+receive the data from the current position not the starting and in shared flow have one more option is reply for suppose provide the 
+some previous data to new receiver it will provide.
