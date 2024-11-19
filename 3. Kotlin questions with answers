@@ -159,3 +159,13 @@ Transformation (Map, filter etc.) Of Data->
 1. In the Live data all tranformation will work on the main thread but in state flow we can switch there coroutine context.
 2. Transaformation are the limited in the live data but in state flow have lots of methods.
 3. Live data require a life cycle for the work it will not work without the life cycle and state flow need only coroutine context.
+
+**Question 15. Whats is the jetpack compose?.
+**Answer 15. Jetpack compose is a jetpack library and mordern ui tolkit that is written in kotlin and it composition based.
+Here we are not use the xml layout files we are created function with anotation with @Composable so that differencite from the normal
+function.
+
+**Question 16. What is the Composition and Recomposition ?.
+**Ansdroid 16. When our application start that time ui will create and intial composition heppen means ui will render after that
+when data will change then recomposition will happen mean ui will recreate.
+
