@@ -149,3 +149,13 @@ error.
 **Answer 12. Shared flow is a hot flow if any one receiver present it will send the data and if some one receiver join that he will
 receive the data from the current position not the starting and in shared flow have one more option is reply for suppose provide the 
 some previous data to new receiver it will provide.
+
+**Question 13. What is the State Flow?.
+**Answer 13. State Flow is same as the shared flow but differece is that state flow save the last updated value and have default value.
+
+**Question 14. What is the diffence between LiveData and StateFlow ?.
+**Answer 14. 
+Transformation (Map, filter etc.) Of Data->
+1. In the Live data all tranformation will work on the main thread but in state flow we can switch there coroutine context.
+2. Transaformation are the limited in the live data but in state flow have lots of methods.
+3. Live data require a life cycle for the work it will not work without the life cycle and state flow need only coroutine context.
